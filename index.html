@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <img class="alura" src="/ENCRIPTADOR-PAOLA/img/alurablanco.png" alt="logo de Alura">
+    <div class="container">
+        <div class="encriptador">
+            <img class="lock" src="/ENCRIPTADOR-PAOLA/img/encriptado.png" alt="img">
+            <h1 class="title"> ENCRIPTADOR <br>DE TEXTO.</h1>
+        </div>
+        <div class="content">
+            <div class="left">
+                <textarea class="text-area" cols="30" rows="20" placeholder=" Ingrese el texto aqui" ></textarea>
+                <div class="informacion">
+                    <img src="/ENCRIPTADOR-PAOLA/img/warning.png" alt="warning" class="war">
+                    <h6 class="informacion-texto"> Solo letras minúsculas y sin acentos. </h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()" ><ion-icon name="lock-closed-outline"></ion-icon> Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()" ><ion-icon name="lock-open-outline"></ion-icon> Desencriptar</button>
+                </div>
+                <p></p>
+            </div>
+
+            <div class="right">
+                <textarea class="mensaje" cols="30" rows="20"></textarea>
+                <div class="nomensaje">
+                    <h5 class="sinMensaje">Ningún mensaje fue encontrado</h5>
+                    <p class="sinMensaje2">Ingresa el texto que desees encriptar o desencriptar</p>
+                    <button class="btn-copiar" onclick="copiar()"> <ion-icon name="copy-outline"></ion-icon> Copiar</button>
+                </div>
+                <p></p>
+            </div>
+        </div>
+    </div>
+<script src="/ENCRIPTADOR-PAOLA/main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+<footer class="footer"> 
+    Paola Morales R <br>
+    <a href="https://github.com/AsogiPaola"> <ion-icon name="logo-github" class="git"></ion-icon></a>
+    <a href="https://www.linkedin.com/in/paola-morales-rodriguez/"><ion-icon name="logo-linkedin" class="linkedin"></ion-icon>
+    <a href="https://www.instagram.com/_asogi_/"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a>
+    </a>
+</footer>
+</html>
